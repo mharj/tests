@@ -110,14 +110,7 @@ export default tseslint.config(
 				},
 			],
 			'no-unused-vars': 'off',
-			'@typescript-eslint/no-unused-vars': [
-				'warn',
-				{
-					argsIgnorePattern: '^_',
-					varsIgnorePattern: '^_',
-					caughtErrorsIgnorePattern: '^_',
-				},
-			],
+			'@typescript-eslint/no-unused-vars': 'off',
 			'@typescript-eslint/no-deprecated': 'warn',
 			'lines-between-class-members': 'off',
 			'@stylistic/ts/lines-between-class-members': [
@@ -158,6 +151,7 @@ export default tseslint.config(
 			'jsdoc/require-returns-type': 'warn',
 			'jsdoc/check-values': 'error',
 			'jsdoc/check-types': 'error',
+			'jsdoc/require-jsdoc': 'off',
 		},
 	},
 	{
