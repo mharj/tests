@@ -25,10 +25,6 @@
 		"noUncheckedIndexedAccess": true,
 		"skipLibCheck": true
 	},
-	"typedocOptions": {
-		"entryPoints": ["src/index.mts"],
-		"out": "docs"
-	},
 	"include": ["src/"],
-	"exclude": ["test/", "dist/", "node_modules/", "*.test.mts", "*.test-d.mts"]
+	"exclude": ["test/", "dist/", "node_modules/", "*.test.ts", "*.test-d.ts"]
 }

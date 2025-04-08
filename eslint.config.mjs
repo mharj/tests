@@ -142,6 +142,7 @@ export default tseslint.config(
 			'@typescript-eslint/array-type': 'off',
 			'@typescript-eslint/consistent-type-definitions': 'off',
 			'@typescript-eslint/no-unnecessary-type-parameters': 'off', // not working ok atm
+			'@typescript-eslint/no-redundant-type-constituents': 'off',
 			'jsdoc/no-types': 'off',
 			'jsdoc/require-param-type': 'warn',
 			'jsdoc/require-param': 'warn',
@@ -155,7 +156,7 @@ export default tseslint.config(
 		},
 	},
 	{
-		files: ['**/*.test.mts', '**/*.test-d.mts'],
+		files: ['**/*.test.ts', '**/*.test-d.ts'],
 		rules: {
 			'no-console': 'off',
 			'no-proto': 'off',
@@ -167,6 +168,7 @@ export default tseslint.config(
 			'@typescript-eslint/no-confusing-void-expression': 'off',
 			'@typescript-eslint/no-unsafe-member-access': 'off',
 			'@typescript-eslint/no-empty-function': 'off',
+			'@typescript-eslint/no-inferrable-types': 'off',
 		},
 	},
 );

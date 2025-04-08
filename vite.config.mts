@@ -10,14 +10,14 @@ export default defineConfig({
 		},
 		coverage: {
 			provider: 'v8',
-			include: ['src/**/*.mts'],
-			exclude: ['src/**/index.mts', 'src/**/*.test-d.mts'],
+			include: ['src/**/*.ts'],
+			exclude: ['src/**/index.ts', 'src/**/*.test-d.ts'],
 			reporter: ['text'],
 		},
-		include: ['**/*.test.mts'],
+		include: ['**/*.test.ts'],
 		typecheck: {
 			tsconfig: './tsconfig.test.json',
-			include: ['**/*.test-d.mts'],
+			include: ['**/*.test-d.ts'],
 		},
 	},
 });

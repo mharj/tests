@@ -1,3 +1,7 @@
+/**
+ * TS type guards and type assertions
+ */
+
 export type AccountName = string & {__brand: 'AccountName'};
 
 /*
@@ -7,3 +11,7 @@ export type AccountName = string & {__brand: 'AccountName'};
  2. Use the type guard function to build a type assertion function, which:
    - Throws a TypeError if the value is invalid.
 */
+
+export function isAccountName() {}
+
+export function assertAccountName() {}
