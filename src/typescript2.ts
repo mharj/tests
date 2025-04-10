@@ -1,5 +1,5 @@
 /*
- * TS validation to literal mapped data object structures
+ * Testing for TS validation to literal sting mapped data object structures.
  */
 
 /**
@@ -8,7 +8,7 @@
 export type GID = string & {__brand: 'GroupId'};
 
 /**
- * Group ID constructor as a branded type
+ * Group ID constructor as a branded type.
  * @example
  * const value: GID = GID('value')
  * @param {string | null | undefined} value - group id
@@ -28,7 +28,10 @@ export type NetworkType = 'Public' | 'Private';
 // 1. Build a mapping for each unique combination of CloudPlatform and NetworkType. The output key format should be "Cloud_<CloudPlatform>_<NetworkType>"", and the value should be of type GID (the actual value inside is not relevant).
 // 2. Enforce type safety so that when a new CloudPlatform or NetworkType is introduced, TypeScript will produce a compile-time error if the mapping is incomplete.
 
-// build working type for mapping key here
+// build working type for mapping of key here
 
-// build working type-safe const mapping (type as key, GID as value) here
-export const dataMapping = {};
+// build working type for mapping value here
+export const dataMapping = {
+	Cloud_AWS_Public: GID('Cloud_AWS_Public'),
+	// apply type safety to this map and build rest of missing mapping with help from TypeScript
+};

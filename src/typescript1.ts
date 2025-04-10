@@ -1,5 +1,5 @@
 /**
- * TS type guards and type assertions
+ * Testing for TS type guards and type assertions with type predicates.
  */
 
 export type AccountName = string & {__brand: 'AccountName'};
