@@ -5,13 +5,17 @@
 export type AccountName = string & {__brand: 'AccountName'};
 
 /*
- 1. Create a validation and type guard function for AccountName:
-   - Ensure the value is a string.
-   - Require a minimum length of 6 characters and a maximum of 12 characters.
- 2. Use the type guard function to build a type assertion function, which:
-   - Throws a TypeError if the value is invalid.
-*/
+ * Use the Typescript type guard functionality to build a type guard function, which:
+ * - Ensure the value type is a string.
+ * - Require a minimum length of 6 characters and a maximum of 12 characters.
+ * - Outcome (true/false) should satisfy actual type guard to indicate if the value is actual AccountName type or not.
+ */
+export function isAccountName(value?: string) {}
 
-export function isAccountName() {}
-
-export function assertAccountName() {}
+/*
+ * Use the Typescript type guard functionality to build a type assertion function, which:
+ *  - Uses the isAccountName type guard function to validate the value.
+ *  - Throws a TypeError if the value is invalid based on outcome from isAccountName function.
+ *  - Outcome should satisfy actual type assertion to indicate if the value is valid AccountName type.
+ */
+export function assertAccountName(value?: string) {}

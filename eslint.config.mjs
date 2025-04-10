@@ -143,6 +143,7 @@ export default tseslint.config(
 			'@typescript-eslint/consistent-type-definitions': 'off',
 			'@typescript-eslint/no-unnecessary-type-parameters': 'off', // not working ok atm
 			'@typescript-eslint/no-redundant-type-constituents': 'off',
+			'@typescript-eslint/no-empty-function': 'warn',
 			'jsdoc/no-types': 'off',
 			'jsdoc/require-param-type': 'warn',
 			'jsdoc/require-param': 'warn',
