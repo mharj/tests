@@ -1,24 +1,24 @@
 /**
- * Testing for TS type guards and type assertions with type predicates with type narrowing.
+ * Tests for TypeScript type guards and type assertions using type predicates and type narrowing.
  */
 
 /**
- * This is branded type which we expect to be used by type guard and type assertion functions.
+ * This is a branded type, intended to be used by type guard and type assertion functions.
  */
 export type AccountName = string & {__brand: 'AccountName'};
 
 /*
- * Use the Typescript type guard functionality to build a type guard function, which:
- * - Ensure the value type is a string.
- * - Require a minimum length of 6 characters and a maximum of 12 characters.
- * - Outcome (true/false) should satisfy actual type guard to indicate if the value is actual AccountName type or not.
+ * Use TypeScript’s type guard functionality to implement a type guard function that:
+ * - Ensures the value is of type string.
+ * - Requires a minimum length of 6 characters and a maximum of 12 characters.
+ * - Returns a boolean result that acts as a type guard, indicating whether the value is a valid AccountName.
  */
 export function isAccountName(value?: string) {}
 
 /*
- * Use the Typescript type guard functionality to build a type assertion function, which:
- *  - Uses the isAccountName type guard function to validate the value.
- *  - Throws a TypeError if the value is invalid based on outcome from isAccountName function.
- *  - Outcome should satisfy actual type assertion to indicate if the value is valid AccountName type.
+ * Use TypeScript’s type assertion functionality to implement a type assertion function that:
+ * - Uses the isAccountName type guard to validate the value.
+ * - Throws a TypeError if the value is invalid according to isAccountName.
+ * - Acts as a type assertion, ensuring the value is treated as a valid AccountName if no error is thrown.
  */
 export function assertAccountName(value?: string) {}

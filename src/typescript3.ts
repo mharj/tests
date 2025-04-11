@@ -1,10 +1,10 @@
 /*
- * Testing usage of TS Generics on types and functions
- *  1. Implement a "Nullable" type with generics type T that allows a given type T to also be null or undefined.
- *  2. Modify demo1 so that it accepts a Nullable string as an argument.
- *  3. Modify demo2 to:
- *    - Use generics to accept any Nullable type with generic type T.
- *    - Ensure the return type is plain generic type or undefined.
+ * Testing the use of TypeScript generics in types and functions.
+ * 1. Implement a "Nullable" type using a generic type T, which allows T to also be null or undefined.
+ * 2. Update demo1 to accept a Nullable string as an argument.
+ * 3. Update demo2 to:
+ *    - Use generics to accept any Nullable type (generic type T) as an argument.
+ *    - Ensure the return type is the plain (non-nullable) generic type or undefined.
  */
 
 export function demo1(arg: string) {
