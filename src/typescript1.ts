@@ -1,7 +1,10 @@
 /**
- * Testing for TS type guards and type assertions with type predicates.
+ * Testing for TS type guards and type assertions with type predicates with type narrowing.
  */
 
+/**
+ * This is branded type which we expect to be used by type guard and type assertion functions.
+ */
 export type AccountName = string & {__brand: 'AccountName'};
 
 /*

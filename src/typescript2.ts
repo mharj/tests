@@ -1,5 +1,5 @@
 /*
- * Testing for TS validation to literal sting mapped data object structures.
+ * Testing for TS literal string and TS literal sting key mapped data object structures.
  */
 
 /**
